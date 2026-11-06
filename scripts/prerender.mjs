@@ -13,7 +13,7 @@ const env = { ...loadEnv("production", root, ""), ...process.env };
 const SITE_URL = (env.VITE_SITE_URL || "https://www.greatvoyagers.com").replace(/\/$/, "");
 const API_URL = (env.PRERENDER_API_URL || env.VITE_API_URL || "http://localhost:5000").replace(/\/$/, "");
 const SITE_NAME = "GreatVoyagers";
-const REQUEST_TIMEOUT_MS = 90_000; // free hosting tiers can take a while to wake up
+const REQUEST_TIMEOUT_MS = 30_000;
 
 const escapeHtml = (value = "") =>
   String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
