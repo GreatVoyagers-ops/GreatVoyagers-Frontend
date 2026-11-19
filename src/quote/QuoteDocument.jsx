@@ -51,8 +51,8 @@ export default function QuoteDocument({ quote, company, onDownload, downloading 
     <div className="min-h-screen bg-ivory-50 text-ink-900">
       <header className="sticky top-0 z-20 border-b border-ivory-50/10 bg-ink-950/95 backdrop-blur-md">
         <div className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-3 px-4 sm:px-6">
-          <a href={company.website || "/"} className="font-serif text-xl font-medium text-ivory-50">
-            Great<em className="font-light text-terra-400">Voyagers</em>
+          <a href={company.website || "/"} className="inline-flex shrink-0 items-center" aria-label="GreatVoyagers">
+            <img src="/logo.png" alt="GreatVoyagers" className="h-10 w-auto rounded-md bg-white px-1.5 py-1" />
           </a>
           <div className="flex items-center gap-2">
             {whatsapp && (

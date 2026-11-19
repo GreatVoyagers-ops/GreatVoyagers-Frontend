@@ -104,7 +104,7 @@ function postPage(template, { post, related }) {
         datePublished: post.publishedAt,
         dateModified: post.updatedAt || post.publishedAt,
         author: { "@type": "Organization", name: post.author || SITE_NAME, url: SITE_URL },
-        publisher: { "@type": "Organization", name: SITE_NAME, logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.svg` } },
+        publisher: { "@type": "Organization", name: SITE_NAME, logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` } },
         mainEntityOfPage: { "@type": "WebPage", "@id": url },
         articleSection: post.category,
         keywords: (post.tags || []).join(", "),

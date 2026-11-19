@@ -21,7 +21,7 @@ const organization = {
   url: SITE_URL,
   email: company.email,
   image: DEFAULT_OG_IMAGE,
-  logo: `${SITE_URL}/favicon.svg`,
+  logo: `${SITE_URL}/logo.png`,
   description:
     "Full-service travel company for domestic and international holidays, flights, hotels, cruises and visas, specialising in Thailand tours and DMC services.",
   address: {

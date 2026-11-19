@@ -24,10 +24,8 @@ const tabClass = ({ isActive }) =>
 
 function Logo({ dark }) {
   return (
-    <Link to="/admin" className="flex items-baseline gap-2">
-      <span className={`font-serif text-xl font-medium ${dark ? "text-ivory-50" : "text-ink-900"}`}>
-        Great<em className="font-light text-terra-400">Voyagers</em>
-      </span>
+    <Link to="/admin" className="flex items-center gap-2">
+      <img src="/logo.png" alt="GreatVoyagers" className={`h-11 w-auto ${dark ? "rounded-md bg-white px-1.5 py-1" : ""}`} />
       <span className="rounded-full bg-terra-500/15 px-2 py-0.5 text-[0.6rem] font-bold uppercase tracking-[0.16em] text-terra-400">CRM</span>
     </Link>
   );

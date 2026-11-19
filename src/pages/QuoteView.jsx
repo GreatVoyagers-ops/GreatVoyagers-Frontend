@@ -47,9 +47,7 @@ export default function QuoteView() {
       <main className="flex min-h-screen items-center justify-center bg-ivory-50 px-6">
         <Seo title="Quote not available | GreatVoyagers" noindex />
         <div className="max-w-md text-center">
-          <p className="font-serif text-2xl text-ink-900">
-            Great<em className="font-light text-terra-500">Voyagers</em>
-          </p>
+          <img src="/logo.png" alt="GreatVoyagers" className="mx-auto h-16 w-auto" />
           <h1 className="mt-6 font-serif text-3xl text-ink-900">Quote not available</h1>
           <p className="mt-3 text-ink-600">{state.error}</p>
           <a href="/" className="btn-primary mt-6 inline-flex">

@@ -16,10 +16,12 @@ const links = [
 
 export function Logo({ tone = "dark", to = "/" }) {
   return (
-    <Link to={to} className="group flex items-baseline gap-1.5" aria-label={`${company.name} home`}>
-      <span className={`font-serif text-2xl font-medium tracking-tight ${tone === "dark" ? "text-ink-900" : "text-ivory-50"}`}>
-        Great<em className="font-light text-terra-500">Voyagers</em>
-      </span>
+    <Link to={to} className="inline-flex shrink-0 items-center" aria-label={`${company.name} home`}>
+      <img
+        src="/logo.png"
+        alt={company.name}
+        className={`h-12 w-auto ${tone === "light" ? "rounded-md bg-white px-1.5 py-1" : ""}`}
+      />
     </Link>
   );
 }

@@ -140,7 +140,7 @@ export default function BlogPost() {
             publisher: {
               "@type": "Organization",
               name: company.name,
-              logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.svg` },
+              logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
             },
             mainEntityOfPage: { "@type": "WebPage", "@id": url },
             articleSection: post.category,
